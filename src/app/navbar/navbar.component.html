@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup" ngbDropdown display="dynamic">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="">Home </a>
+      <a class="nav-item nav-link" routerLink="/shoping-cart">Shopping Cart</a>
+      <a class="nav-item nav-link" href="#">
+        
+      </a>
+      <a ngbDropdownToggle class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       Username
+      </a>
+      <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" routerLink="/my/orders">My Orders</a>
+        <a class="dropdown-item" routerLink="/admin/orders">Manage Orders</a>
+        <a class="dropdown-item" routerLink="/admin/products">Manage Products</a>
+        <a class="dropdown-item" >Log Out</a>
+      </div>
+      
+    </div>
+  </div>
+</nav>
